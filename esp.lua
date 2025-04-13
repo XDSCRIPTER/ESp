@@ -44,7 +44,7 @@ function CreateEsp(Player)
             end
             if Config.Names then
                 Name.Visible = IsVisible
-                Name.Color = Config.NamesColor
+                Name.Color = Player.TeamColor 
                 Name.Text = Player.Name.." "..math.floor((workspace.CurrentCamera.CFrame.p - Player.Character.HumanoidRootPart.Position).magnitude).."m"
                 Name.Center = true
                 Name.Outline = Config.NamesOutline
